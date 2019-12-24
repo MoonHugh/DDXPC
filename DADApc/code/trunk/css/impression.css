@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin: 0; padding: 0; border:0;  color:#000000;  text-decoration:none; font-family: "microsoft yahei";}
+body{padding:0; margin:0; width: 100%; font-size:14px;}
+ul,li{ list-style:none;}
+img{ display:block; border:0;}
+a{ color:#000;}
+a:link,a:visited,a:hover,a:active{ text-decoration:none;}
+a:focus{outline:0; }
+.clear{ clear:both;}
+.fl{ float:left}.fr{ float:right}
+.fix{*zoom:1;}
+.fix:after{ content:""; display:block; clear:both;}
+/* public over */
+
+/*顶部导航*/
+.phoneNum{position: absolute; right: 101px; top:24px; font-size: 32px; text-align: right; color: #333;}
+.logoImg{ position: absolute; left:63px; top:50px; width: 100px; height: 58px;}
+nav{ position: absolute; z-index: 9999; right: 98px; top:82px; }
+nav a{ float: left; margin-left: 61px; height: 38px; font-size: 20px; line-height: 36px; color: #333;}
+.index_ac{ color:#fff; background: url("../images/index/white_line.png")no-repeat center bottom;}
+.merchantCenter{ width: 140px; height: 36px; border-radius: 18px; text-align: center; color: #fff; background-color: #d74a85;}
+
+/*正文部分*/
+.top_box{ width: 100%; height:1130px; background: url("../images/impression/top_bg.png")no-repeat;}
+.main_con{ width: 1280px; margin: 0 auto;}
+.bannerbar{ padding-top: 289px; margin: 0 auto;}
+.downloadImg{ padding-top: 99px;}
+.downloadImg img{ float: left; padding-right: 30px;}
+.advantage_tit{ width:100%; padding-top: 110px; font-size:26px; color:#3c3c3c; text-align: left;}
+.advantage_tit span{ font-size: 16px; color: #666;}
+.advantage_con{width: 1040px; margin: 0 auto; padding-top: 199px;}
+.advantage_con li{ float:left; width: 200px;}
+.advantage_con li+li{padding-left: 220px;}
+.advantage_con li div{ width: 116px; height: 116px; margin: 0 auto; }
+.advantage_con li div img:hover{ animation: rotateAround 0.8s linear; -moz-animation: rotateAround 0.8s linear;	-webkit-animation: rotateAround 0.8s linear; -o-animation: rotateAround 0.8s linear;}
+.advantage_con li .ad_img1{ background: url("../images/index/advantage1.png")no-repeat center;}
+.advantage_con li .ad_img2{ background: url("../images/index/advantage2.png")no-repeat center;}
+.advantage_con li .ad_img3{ background: url("../images/index/advantage3.png")no-repeat center;}
+.ad_tit{ padding: 26px 0 22px 0; font-size: 22px; text-align: center; color: #3c3c3c;}
+.ad_text{ padding-bottom: 7px; font-size: 15px; text-align: center; color: #b6b6b6;}
+.function_box{ margin-top: 160px; height: 1107px; background-color: #fafafa;}
+.function_tit{ padding: 200px 0 130px 0;}
+.function_cl{ width:351px; height: 113px; margin-bottom: 65px; padding: 20px 0 0 20px;}
+.function_cl img{ display: block; width: 41px; height: 41px; }
+.function_txt{ width:264px; padding-left: 20px;}
+.function_txt .tit{ font-size: 16px; font-weight: bold; color: #282528;}
+.function_txt .con{ padding-top: 12px; font-size: 14px; line-height: 20px; color: #60585d;}
+.function_m{ width:272px; height: 551px; margin: -14px 93px 0; background: url("../images/impression/iPhone.png")no-repeat; }
+.function_m img{ width:230px; height:410px;  padding: 70px 18px;}
+.team_box{ padding-bottom: 220px;}
+.team_tit{padding: 200px 0 32px 0; }
+.teamImg li{ position:relative; width: 283px; height: 406px; display:flex; justify-content:center; align-items:center; overflow: hidden;}
+.teamImg li+li{ margin-left: 32px;}
+.teamImg img{ width: 257px; height: 370px;}
+.teamImg{ padding-top: 22px;}
+.teamImg li div{ width: 100%; height: 88px; position: absolute; left: 0; bottom: -88px; background: rgba(8,8,8,0.5); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+.team_name{ padding:21px 0 11px 0; font-size: 20px; color: #fff; text-align: center;}
+.team_position{ font-size: 14px; color: #fff; text-align: center; }
+.teamImg li:hover img{width:283px;height:406px;margin:0; }
+.teamImg li:hover div{ transform:translateY(-88px); -ms-transform:translateY(-88px); -webkit-transform:translateY(-88px); -o-transform:translateY(-88px); -moz-transform:translateY(-88px);}
+    /*底部*/
+.footer{ width: 100%; height: 194px; background: url(../images/cooperation/bottom_bg.png) no-repeat center bottom;}
+.footerMid{ margin: 0 auto; width: 1280px;}
+.fMTop{ height: 156px;}
+.botlogo{ display: block; float: left; padding: 40px 110px 0 46px; width: 84px; height: 84px;}
+.information{ float: left; padding-top: 66px;}
+.information li{ float: left; width: 290px;}
+.information li img{ float: left; padding-right: 20px; width: 47px; height: 47px;}
+.information li .p3{ float: left; line-height: 48px; font-size: 16px; color: #adb4bd;}
+.information li .p4{ float: left; width: 180px; line-height: 24px; font-size: 16px; color: #adb4bd;}
+.QRcode{ float: right; padding: 10px 54px 0 0; width: 96px;}
+.QRcode img{ display: block; width: 96px; height: 96px;}
+.QRcode p{ line-height: 22px; text-align: center; font-size: 14px; color: #a1a8b1;}
+.fMBot{ line-height: 38px; font-size: 14px; color: #5d6773; text-indent: 44px;}
+@keyframes rotateAround{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

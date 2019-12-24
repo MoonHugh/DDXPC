@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin: 0px; padding: 0px; border:0;  color:#000000;  text-decoration:none; font-family: "microsoft yahei";}
+body{padding:0; margin:0; font-family:"Microsoft Yahei"; font-size:14px;}
+ul,li{ list-style:none; list-style-type:none;}
+img{  border:0;}
+a{ color:#000;}
+a:link,a:visited,a:hover,a:active{ text-decoration:none;}
+a:focus{outline:0; }
+.clear{ clear:both;}
+.fl{ float:left}.fr{ float:right}
+.fix{*zoom:1;}
+.fix:after{ content:""; display:block; clear:both;}
+/* public over */
+
+
+body{ width: 100%; }
+/*顶部导航*/
+.phoneNum{padding:24px 101px 0 0; font-size: 32px; text-align: right; color: #333;}
+.logoImg{ position: absolute; left:63px; top:50px; width: 100px; height: 58px;}
+nav{ position: absolute; z-index: 9999; right: 98px; top:82px; }
+nav a{ float: left; margin-left: 61px; height: 38px; font-size: 20px; line-height: 36px; color: #333;}
+.index_ac{ color:#f6327a; background: url("../images/index/red_line.png")no-repeat center bottom;}
+.merchantCenter{ width: 140px; height: 36px; border-radius: 18px; text-align: center; color: #fff; background-color: #f85b95;}
+/*正文*/
+.content{ width: 100%; }
+.cTop{ width: 100%; height: 802px; background: url(../images/cooperation/topbg.png) no-repeat top center; }
+.cTop p{ padding-top: 130px; line-height: 36px; text-align: center; font-size: 36px; color: #102547; }
+.cTop span{ display: block; padding-top: 26px; text-align: center; line-height: 16px; font-size: 16px; color: #bec6cc; }
+.cTop a{ display: block; margin: 62px auto 0; width: 128px; height: 36px; line-height: 36px; text-align: center; font-size: 16px; color: #fff; background: #f6327a; border-radius: 18px; }
+.cBot{ margin: 184px auto 200px; width: 1280px; }
+.row{}
+.row2{ float: left; width: 640px; height: 640px; }
+.row4{ width: 640px; height: 320px; }
+.pimg{ float: left; width: 320px; height: 320px; position: relative; }
+.pimg img{ display: block; width: 320px; height: 320px; background: #f6f6f6; }
+.p1{ width: 13px; height: 32px; background: url(../images/cooperation/trigon.png) no-repeat -13px 0; position: absolute; left: 0; top: 144px; z-index: 10; }
+.p2{ width: 13px; height: 32px; background: url(../images/cooperation/trigon.png) no-repeat 0 0; position: absolute; right: 0; top: 144px; z-index: 10; }
+.logoimg{ display: block; float: left; width: 320px; height: 320px; background: #f6f6f6; }
+.bigimg{ display: block; float: left; width: 640px; height: 640px; }
+
+/*底部*/
+.footer{ width: 100%; height: 194px; background: url(../images/cooperation/bottom_bg.png) no-repeat center bottom; }
+.footerMid{ margin: 0 auto; width: 1280px; }
+.fMTop{ height: 156px; }
+.botlogo{ display: block; float: left; padding: 40px 110px 0 46px; width: 84px; height: 84px; }
+.information{ float: left; padding-top: 66px; }
+.information li{ float: left; width: 290px; }
+.information li img{ float: left; padding-right: 20px; width: 47px; height: 47px; }
+.information li .p3{ float: left; line-height: 48px; font-size: 16px; color: #adb4bd; }
+.information li .p4{ float: left; width: 180px; line-height: 24px; font-size: 16px; color: #adb4bd; }
+.QRcode{ float: right; padding: 10px 54px 0 0; width: 96px; }
+.QRcode img{ display: block; width: 96px; height: 96px; }
+.QRcode p{ line-height: 22px; text-align: center; font-size: 14px; color: #a1a8b1; }
+.fMBot{ line-height: 38px; font-size: 14px; color: #5d6773; text-indent: 44px; }

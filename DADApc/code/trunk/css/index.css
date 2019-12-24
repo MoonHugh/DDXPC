@@ -1,0 +1,190 @@
+*{ margin: 0; padding: 0; border: 0; font-size: 100%; font-weight: normal; vertical-align: baseline;}
+html,body { position: relative; width: 100%; height: 100%; line-height: 1; font-family: 微软雅黑;}
+a { text-decoration: none; -webkit-backface-visibility: hidden; -webkit-tap-highlight-color:transparent;-moz-tap-highlight-color:transparent;-ms-tap-highlight-color:transparent;-o-tap-highlight-color:transparent;}
+li { list-style: none;}
+a,img{ display: block; border:0;}
+.clearfix{*zoom:1;}
+.clearfix:after{content:""; display:block; clear:both;}
+.hide{ display: none;}
+/* public over */
+#canvas{display: block; position: relative; top: 0; z-index: -1;}
+/*顶部导航*/
+.phoneNum{position: absolute; right: 101px; top:24px; font-size: 32px; text-align: right; color: #fff;}
+.logoImg{ position: absolute; left:63px; top:50px; width: 100px; height: 58px;}
+nav{ position: absolute; z-index: 9999; right: 98px; top:82px; }
+nav a{ float: left; margin-left: 61px; height: 38px; font-size: 20px; line-height: 36px; color: #fff;}
+.index_ac{ color:#f6327a; background: url("../images/index/red_line.png")no-repeat center bottom;}
+.merchantCenter{ width: 140px; height: 36px; border-radius: 18px; text-align: center; color: #191919; background-color: #f6327a;}
+.swiper-container-out { width: 100%; height: 100%; margin-left: auto; margin-right: auto; position: absolute; left: 0; top:0;}
+.main_con{ width: 1280px; margin: 0 auto;}
+.intro_tit{ width:937px; height:253px; margin: 390px auto 0; background: url("../images/index/banner-txt.png")no-repeat; animation-name:bounceInDown, tada; animation-duration:1s, 1s; animation-delay:0s, 1s; -moz-animation-name:bounceInDown, tada; -moz-animation-duration:1s, 1s; -moz-animation-delay:0s, 1s; -webkit-animation-name:bounceInDown, tada; -webkit-animation-duration:1s, 1s; -webkit-animation-delay:0s, 1s; -o-animation-name:bounceInDown, tada; -o-animation-duration:1s, 1s; -o-animation-delay:0s, 1s;}
+.nextIcon{margin: 0 auto; animation: nextPage 1.5s linear infinite; -moz-animation: nextPage 1.5s linear infinite;	-webkit-animation: nextPage 1.5s linear infinite; -o-animation: nextPage 1.5s linear infinite;}
+/*优势页面*/
+.advantage_tit{ width:100%; padding-top: 180px; font-size:26px; color:#3c3c3c; text-align: left;}
+.advantage_tit span{ font-size: 16px; color: #666;}
+.advantage_con{width: 1040px; margin: 0 auto; padding-top: 199px;}
+.advantage_con li{ float:left; width: 200px;}
+.advantage_con li+li{padding-left: 220px;}
+.advantage_con li div{ width: 116px; height: 116px; margin: 0 auto; }
+.advantage_con li div img:hover{ animation: rotateAround 0.8s linear; -moz-animation: rotateAround 0.8s linear;	-webkit-animation: rotateAround 0.8s linear; -o-animation: rotateAround 0.8s linear;}
+.advantage_con li .ad_img1{ background: url("../images/index/advantage1.png")no-repeat center;}
+.advantage_con li .ad_img2{ background: url("../images/index/advantage2.png")no-repeat center;}
+.advantage_con li .ad_img3{ background: url("../images/index/advantage3.png")no-repeat center;}
+.ad_tit{ padding: 26px 0 22px 0; font-size: 22px; text-align: center; color: #3c3c3c;}
+.ad_text{ padding-bottom: 7px; font-size: 15px; text-align: center; color: #b6b6b6;}
+/*试衣页面*/
+.img_l{ float: right; width:106px;}
+.img_m{float: left; margin-left: 106px; width: 964px; position: relative;}
+.img_l:hover .shift_icon,.img_l:hover .bg_icon{ display: block;}
+.fitting_icon{ width: 136px; height: 136px; border-radius:50%;}
+.shift_icon,.bg_icon{ width: 124px; height: 72px; padding: 30px 0 0 34px;}
+.fitting-box{ padding-top: 80px;}
+.model_box{ width: 656px; height: 656px; border-radius: 100%; margin: 0 auto; z-index: 999; display:flex; /*justify-content:center; align-items:center;*/ background: url("../images/index/bg1.png")no-repeat;}
+.model_box img{ margin: 44px auto; width: 174px; height:568px;}
+#user_call{width:964px; height:600px; position: absolute; left: 0; top:360px; overflow: hidden; margin:0 auto;}
+#user_call li{ width: 108px; height: 108px; position:absolute; display:flex; /*justify-content:center; align-items:center;*/ overflow: hidden; border-radius: 50%; background-color: #ffc2d8;}
+#user_call li img{ margin: 15px auto; position:relative;top:0;left:0; width: 39px; height: 78px;}
+#user_call li.pic_1{top:130px;left:49px; z-index: 2;}
+#user_call li.pic_2{top:254px;left:169px; z-index: 2;}
+#user_call li.pic_3{top:331px;left:329px; z-index: 2;}
+#user_call li.pic_4{top:331px;left:527px; z-index: 2;}
+#user_call li.pic_5{top:254px;left:686px; z-index: 2;}
+#user_call li.pic_6{top:130px;left:806px; z-index: 2;}
+#user_call li:hover{width:156px; height:156px; box-shadow: 0 0 4px 4px rgba(255,194,216,0.4); transform:translate(-24px,-24px); -ms-transform:translate(-24px,-24px); -webkit-transform:translate(-24px,-24px); -o-transform:translate(-24px,-24px); -moz-transform:translate(-24px,-24px);}
+#user_call li:hover img{ margin: 42px auto; transform:scale(1.3,1.3); -ms-transform:scale(1.3,1.3); -webkit-transform:scale(1.3,1.3); -o-transform:scale(1.3,1.3); -moz-transform:scale(1.3,1.3);}
+#user_call li.activeLi{ width:156px; height:156px; box-shadow: 0 0 4px 4px rgba(255,194,216,0.4); transform:translate(-24px,-24px); -ms-transform:translate(-24px,-24px); -webkit-transform:translate(-24px,-24px); -o-transform:translate(-24px,-24px); -moz-transform:translate(-24px,-24px);}
+#user_call li.activeLi img{ margin: 42px auto; transform:scale(1.3,1.3); -ms-transform:scale(1.3,1.3); -webkit-transform:scale(1.3,1.3); -o-transform:scale(1.3,1.3); -moz-transform:scale(1.3,1.3);}
+/*团队*/
+.team_tit{ padding-top: 150px;}
+.swiper-container-in{ width:100%; height: 407px; margin-top: 60px; overflow:visible;}
+.swiper-container-in .swiper-slide{ width: 285px; height: 408px; position: relative;}
+.swiper-container-in .swiper-slide img{ width:257px; height: 370px; margin:19px 14px; border-radius: 10px; z-index: 1;}
+.swiper-container-in .swiper-slide div{ width: 100%; height: 88px; position: absolute; left: 0; bottom: -88px; background: rgba(8,8,8,0.5); border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; opacity: 0;}
+.team_name{ padding:21px 0 11px 0; font-size: 20px; color: #fff; text-align: center;}
+.team_position{ font-size: 14px; color: #fff; text-align: center; }
+.swiper-button-prev{ background: url("../images/index/more_iconl.png")no-repeat; position: absolute; top: -64px; left: 1040px; width: 72px; height: 72px; z-index: 10; cursor: pointer;}
+.swiper-button-next{ background: url("../images/index/more_iconr.png")no-repeat; position: absolute; top: -64px; left: 1060px; width: 72px; height: 72px; z-index: 10; cursor: pointer;}
+.swiper-container-in .swiper-slide:hover img{ width:285px; height:408px; margin:0;}
+.swiper-container-in .swiper-slide:hover div{ opacity:1; transform:translateY(-88px); -ms-transform:translateY(-88px); -webkit-transform:translateY(-88px); -o-transform:translateY(-88px); -moz-transform:translateY(-88px);}
+
+/*底部*/
+.footer{ position:absolute; left:0; bottom:0; width: 100%; height: 194px; background: url(../images/cooperation/bottom_bg.png) no-repeat center bottom; }
+.footerMid{ margin: 0 auto; width: 1280px; }
+.fMTop{ height: 156px; }
+.botlogo{ display: block; float: left; padding: 40px 110px 0 46px; width: 84px; height: 84px; }
+.information{ float: left; padding-top: 66px; }
+.information li{ float: left; width: 290px; }
+.information li img{ float: left; padding-right: 20px; width: 47px; height: 47px; }
+.information li .p3{ float: left; line-height: 48px; font-size: 16px; color: #adb4bd; }
+.information li .p4{ float: left; width: 180px; line-height: 24px; font-size: 16px; color: #adb4bd; }
+.QRcode{ float: right; padding: 10px 54px 0 0; width: 96px; }
+.QRcode img{ display: block; width: 96px; height: 96px; }
+.QRcode p{ line-height: 22px; text-align: center; font-size: 14px; color: #a1a8b1; }
+.fMBot{ line-height: 38px; font-size: 14px; color: #5d6773; text-indent: 44px; }
+/*动画*/
+.slideInUp{animation: slideInUp 1s; -moz-animation: slideInUp 1s;	-webkit-animation: slideInUp 1s; -o-animation: slideInUp 1s;}
+.slideInDown{animation: slideInDown 1s; -moz-animation: slideInDown 1s;	-webkit-animation: slideInDown 1s; -o-animation: slideInDown 1s; }
+.out{animation: out 1s; -moz-animation: out 1s;	-webkit-animation: out 1s; -o-animation: out 1s;}
+@keyframes bgscale
+{
+    0%   {box-shadow: 0 0 0 0 rgba(246,50,122,0.1);}
+    100% {box-shadow: 0 0 0 16px rgba(246,50,122,0.1);}
+}
+@keyframes bgscale2
+{
+    0%   {box-shadow: 0 0 0 0 rgba(246,50,122,0.15);}
+    100% {box-shadow: 0 0 0 8px rgba(246,50,122,0.15);}
+}
+@keyframes nextPage
+{
+    0%  {padding-top: 200px;}
+    75% {padding-top: 210px;}
+    100%{padding-top: 200px;}
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translate(0, 100px);
+    }
+    to {
+        transform: translate(0, 0);
+
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translate(0, -100px);
+    }
+
+    to {
+        transform: translate(0, 0);
+
+    }
+}
+@keyframes rotateAround{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes bounceInDown {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+@keyframes tada {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes out{
+    0%{
+        position: absolute;
+        left: 450px;
+        top:-50px;
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
